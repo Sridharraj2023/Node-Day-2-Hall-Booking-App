@@ -20,7 +20,9 @@ The server will run on http://localhost:3000.
 ## API Endpoints
 **Create a Room**
 URL: /rooms
+
 Method: POST
+
 Description: Create a new room with specific attributes.
 Body Parameters:
 numberOfSeats (Number): The number of seats in the room.
@@ -31,9 +33,12 @@ Returns the details of the newly created room.
 
 **Book a Room**
 URL: /bookings
+
 Method: POST
+
 Description: Book a room for a specific date and time.
 Body Parameters:
+
 customerName (String): Name of the customer.
 date (String): Date of the booking (format: YYYY-MM-DD).
 startTime (String): Start time of the booking (format: HH:MM).
@@ -51,14 +56,18 @@ Returns a list of rooms with their booking details.
 
 **List All Customers with Booking Data**
 URL: /customers
+
 Method: GET
+
 Description: Get a list of all customers along with their booking details.
 Response:
 Returns a list of customers with their booking details.
 
 **List Bookings for a Specific Customer**
 URL: /customers/:customerName
+
 Method: GET
+
 Description: Get a list of all bookings made by a specific customer.
 URL Parameter:
 customerName (String): Name of the customer whose bookings are to be retrieved.
